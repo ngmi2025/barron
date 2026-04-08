@@ -1,0 +1,222 @@
+[build]
+  publish = "."
+
+# =============================================
+# LEGACY URL REDIRECTS (301 Permanent)
+# Old Wix site URLs → New site URLs
+# These preserve SEO link equity from the old site
+# =============================================
+
+# Area pages (old format: /pest-control-{area})
+[[redirects]]
+  from = "/pest-control-tunbridge-wells"
+  to = "/areas/tunbridge-wells"
+  status = 301
+
+[[redirects]]
+  from = "/pest-control-tonbridge"
+  to = "/areas/tonbridge"
+  status = 301
+
+[[redirects]]
+  from = "/pest-control-sevenoaks"
+  to = "/areas/sevenoaks"
+  status = 301
+
+[[redirects]]
+  from = "/pest-control-crowborough"
+  to = "/areas/crowborough"
+  status = 301
+
+[[redirects]]
+  from = "/pest-control-wadhurst"
+  to = "/areas/wadhurst"
+  status = 301
+
+# Service pages
+[[redirects]]
+  from = "/jlm-services-local-pest-control"
+  to = "/services"
+  status = 301
+
+[[redirects]]
+  from = "/commercial-pest-control"
+  to = "/commercial"
+  status = 301
+
+[[redirects]]
+  from = "/wasp-control"
+  to = "/services/wasp-control"
+  status = 301
+
+[[redirects]]
+  from = "/rats-in-drains"
+  to = "/services/rat-control"
+  status = 301
+
+# Info pages
+[[redirects]]
+  from = "/pest-library-pest-advice-vermin"
+  to = "/pest-library"
+  status = 301
+
+[[redirects]]
+  from = "/about-jlm-pest-control"
+  to = "/about"
+  status = 301
+
+# Old Wix about URL variant
+[[redirects]]
+  from = "/about-jlm"
+  to = "/about"
+  status = 301
+
+# Blog posts (old Wix /post/ format → relevant pages)
+[[redirects]]
+  from = "/post/rat-run"
+  to = "/services/rat-control"
+  status = 301
+
+[[redirects]]
+  from = "/post/rodent-proofing"
+  to = "/services/rat-control"
+  status = 301
+
+[[redirects]]
+  from = "/post/new-website"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/post/www-jlmpestcontrol-co-uk"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/post/jlm-pest-control"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/post/demi-diamond-moth-lures"
+  to = "/blog"
+  status = 301
+
+# Catch-all for any other /post/ URLs
+[[redirects]]
+  from = "/post/*"
+  to = "/blog"
+  status = 301
+
+# =============================================
+# CLEAN URL REWRITES (200 - internal rewrites)
+# Serve .html files without the extension
+# =============================================
+
+[[redirects]]
+  from = "/services/:slug"
+  to = "/services/:slug.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas/:slug"
+  to = "/areas/:slug.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/services"
+  to = "/services.html"
+  status = 200
+
+[[redirects]]
+  from = "/commercial"
+  to = "/commercial.html"
+  status = 200
+
+[[redirects]]
+  from = "/pest-library"
+  to = "/pest-library.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog"
+  to = "/blog.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog/:slug"
+  to = "/blog/:slug.html"
+  status = 200
+
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 200
+
+[[redirects]]
+  from = "/terms"
+  to = "/terms.html"
+  status = 200
+
+# =============================================
+# CUSTOM 404
+# =============================================
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# =============================================
+# SECURITY & PERFORMANCE HEADERS
+# =============================================
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src 'self' https://www.google.com; connect-src 'self'"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    Content-Type = "application/xml"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"

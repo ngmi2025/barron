@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bird Control | Expert Bird Proofing | Barron Pest Control</title>
+  <meta name="description" content="Professional bird control and proofing in Suffolk County, Nassau County & The Hamptons. Netting, spiking, bird wire & guano removal. Call 631-281-7386.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://barronpestcontrol.com/services/bird-control">
+  <meta property="og:title" content="Bird Control | Barron Pest Control">
+  <meta property="og:description" content="Professional bird control and proofing across Long Island. Netting, spiking, bird wire and guano removal.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700;800;900&family=Roboto:wght@400;500;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { primary: '#1B2A4A', secondary: '#2B7CE9', accent: '#22C55E', 'accent-hover': '#16A34A', 'neutral-light': '#F8FAFC', 'neutral-mid': '#64748B', 'neutral-dark': '#0F172A', emergency: '#EF4444' }, fontFamily: { sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'] } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Bird Control",
+    "provider": { "@type": "PestControlService", "name": "Barron Pest Control", "telephone": "6312817386" },
+    "areaServed": [{"@type": "City", "name": "Suffolk County"}, {"@type": "City", "name": "Nassau County"}, {"@type": "City", "name": "The Hamptons"}],
+    "description": "Professional bird control and proofing services for homes and businesses across Long Island."
+  }
+  </script>
+</head>
+<body class="bg-white text-neutral-mid font-sans antialiased">
+
+  <!-- HEADER -->
+  <header id="header" class="header fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="/" class="flex items-center gap-2 flex-shrink-0">
+          <div class="flex flex-col leading-none">
+            <span class="text-2xl lg:text-3xl font-extrabold text-white tracking-tight">BARRON</span>
+            <span class="text-[0.6rem] lg:text-xs font-semibold text-neutral-mid tracking-[0.2em] uppercase">Pest Control</span>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="/services.html" class="text-sm font-medium text-secondary">Services</a>
+          <a href="/commercial.html" class="text-sm font-medium text-neutral-dark hover:text-secondary transition-colors">Commercial</a>
+          <a href="/pest-library.html" class="text-sm font-medium text-neutral-dark hover:text-secondary transition-colors">Pest Library</a>
+          <a href="/about.html" class="text-sm font-medium text-neutral-dark hover:text-secondary transition-colors">About</a>
+          <a href="/contact.html" class="text-sm font-medium text-neutral-dark hover:text-secondary transition-colors">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="tel:6312817386" class="hidden md:flex items-center gap-2 text-sm font-semibold text-primary hover:text-secondary transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            631-281-7386
+          </a>
+          <button onclick="openQuoteModal()" class="btn-primary text-sm !py-2 !px-4">Get Free Quote</button>
+          <button id="mobileMenuToggle" class="lg:hidden p-2 text-neutral-dark" aria-label="Open menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu fixed inset-0 z-[60] bg-white">
+    <div class="flex items-center justify-between p-4 border-b border-gray-100">
+      <span class="text-xl font-extrabold text-primary">BARRON</span>
+      <button id="mobileMenuClose" class="p-2 text-neutral-dark" aria-label="Close menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+    </div>
+    <nav class="p-6 space-y-4">
+      <a href="/" class="block text-lg font-semibold text-primary">Home</a>
+      <a href="/services.html" class="block text-lg font-semibold text-secondary">Services</a>
+      <a href="/commercial.html" class="block text-lg font-semibold text-primary">Commercial</a>
+      <a href="/about.html" class="block text-lg font-semibold text-primary">About</a>
+      <a href="/contact.html" class="block text-lg font-semibold text-primary">Contact</a>
+      <div class="pt-4 border-t border-gray-100">
+        <a href="tel:6312817386" class="flex items-center gap-3 text-primary font-semibold mb-3">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          631-281-7386
+        </a>
+        <button onclick="openQuoteModal(); closeMobileMenu();" class="btn-primary w-full justify-center">Get Free Quote</button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="pt-20 lg:pt-24 bg-neutral-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <nav class="flex items-center gap-2 text-sm text-neutral-mid">
+        <a href="/" class="hover:text-secondary transition-colors">Home</a>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        <a href="/services.html" class="hover:text-secondary transition-colors">Services</a>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        <span class="text-neutral-dark font-medium">Bird Control</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Service Hero -->
+  <section class="bg-neutral-light pb-12 lg:pb-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-secondary/10 text-secondary rounded-full px-4 py-1.5 text-sm font-medium mb-4">&#x1F426; Bird Control</div>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-neutral-dark mb-4 leading-tight">Professional Bird Control &amp; Proofing</h1>
+          <p class="text-lg text-neutral-mid mb-6">Pigeons, gulls, and other pest birds cause significant damage to buildings and pose health risks through their droppings. We provide effective, humane bird deterrent solutions for both residential and commercial properties.</p>
+          <div class="flex flex-col sm:flex-row gap-3 mb-6">
+            <button onclick="openQuoteModal()" class="btn-primary text-base !py-3 !px-6 justify-center">Get a Free Quote</button>
+            <a href="tel:6312817386" class="btn-outline text-base !py-3 !px-6 justify-center">Call 631-281-7386</a>
+          </div>
+          <div class="flex flex-wrap gap-4 text-sm">
+            <span class="flex items-center gap-1.5 text-neutral-mid"><svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Humane methods</span>
+            <span class="flex items-center gap-1.5 text-neutral-mid"><svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Free survey</span>
+            <span class="flex items-center gap-1.5 text-neutral-mid"><svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Commercial &amp; residential</span>
+          </div>
+        </div>
+        <div class="aspect-[4/3] rounded-2xl overflow-hidden">
+          <img src="../images/pests/bird-hero.png" alt="Pigeons roosting on a building ledge - professional bird control by Barron Pest Control" class="w-full h-full object-cover" loading="eager">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signs of Infestation -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl lg:text-3xl font-extrabold text-neutral-dark mb-6">Signs You Have a Bird Problem</h2>
+        <p class="text-neutral-mid mb-8">Pest birds can quickly become a serious issue for properties. Look out for these common signs:</p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="flex items-start gap-3 p-4 bg-neutral-light rounded-xl">
+            <div class="w-8 h-8 bg-emergency/10 text-emergency rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-neutral-dark text-sm">Bird Droppings</h3>
+              <p class="text-sm text-neutral-mid">Accumulations of bird droppings on walls, ledges, walkways, vehicles, signage, and building facades. Droppings are acidic and cause lasting damage to stonework and paintwork.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-neutral-light rounded-xl">
+            <div class="w-8 h-8 bg-emergency/10 text-emergency rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-neutral-dark text-sm">Nesting Materials</h3>
+              <p class="text-sm text-neutral-mid">Twigs, feathers, and debris collecting in gutters, on ledges, on rooftops, and in roof spaces. Nests can block drainage and cause water damage.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-neutral-light rounded-xl">
+            <div class="w-8 h-8 bg-emergency/10 text-emergency rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-neutral-dark text-sm">Persistent Noise</h3>
+              <p class="text-sm text-neutral-mid">Constant cooing, squawking, or flapping from roosting or nesting birds, particularly early in the morning and throughout the day. Noise can be especially problematic for businesses.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-neutral-light rounded-xl">
+            <div class="w-8 h-8 bg-emergency/10 text-emergency rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-neutral-dark text-sm">Blocked Gutters &amp; Drains</h3>
+              <p class="text-sm text-neutral-mid">Gutters, downpipes, and flat roof drains blocked by nesting materials, feathers, and droppings, leading to water overflow and potential structural damage.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-neutral-light rounded-xl">
+            <div class="w-8 h-8 bg-emergency/10 text-emergency rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-neutral-dark text-sm">Damaged Stock &amp; Goods</h3>
+              <p class="text-sm text-neutral-mid">For commercial premises, birds entering loading bays and warehouses can contaminate and damage stock, packaging, and stored goods with droppings and feathers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Health Risks -->
+  <section class="py-16 lg:py-20 bg-neutral-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl lg:text-3xl font-extrabold text-neutral-dark mb-6">Why Bird Control Is Essential</h2>
+        <p class="text-neutral-mid mb-6">Pest birds cause far more damage than many people realise. Here&rsquo;s why professional bird control matters:</p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start gap-3"><span class="w-6 h-6 bg-emergency/10 text-emergency rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">!</span><span><strong class="text-neutral-dark">Disease transmission:</strong> Bird droppings carry over 60 transmissible diseases including ornithosis, salmonella, and E. coli. Dried droppings become airborne and can be inhaled.</span></li>
+          <li class="flex items-start gap-3"><span class="w-6 h-6 bg-emergency/10 text-emergency rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">!</span><span><strong class="text-neutral-dark">Slip hazards:</strong> Wet bird droppings on walkways, steps, fire escapes, and entrance areas create serious slip hazards, putting businesses at risk of liability claims.</span></li>
+          <li class="flex items-start gap-3"><span class="w-6 h-6 bg-emergency/10 text-emergency rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">!</span><span><strong class="text-neutral-dark">Property damage:</strong> Bird droppings are highly acidic and erode stonework, metalwork, and paintwork. Nesting materials block gutters and drainage, causing water damage.</span></li>
+          <li class="flex items-start gap-3"><span class="w-6 h-6 bg-emergency/10 text-emergency rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">!</span><span><strong class="text-neutral-dark">Business reputation:</strong> Bird droppings on shopfronts, restaurants, and commercial premises create an unhygienic and unprofessional appearance that can deter customers.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Treatment Process -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl lg:text-3xl font-extrabold text-neutral-dark mb-6">Our Bird Control Solutions</h2>
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-secondary text-white rounded-xl flex items-center justify-center flex-shrink-0 font-bold">1</div>
+            <div>
+              <h3 class="font-bold text-neutral-dark mb-1">Bird Netting</h3>
+              <p class="text-neutral-mid">High-quality, UV-stabilised bird netting installed across building facades, loading bays, courtyards, and roof spaces. Netting provides a near-invisible barrier that prevents birds from accessing problem areas.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-secondary text-white rounded-xl flex items-center justify-center flex-shrink-0 font-bold">2</div>
+            <div>
+              <h3 class="font-bold text-neutral-dark mb-1">Bird Spikes &amp; Wire Systems</h3>
+              <p class="text-neutral-mid">Stainless steel or polycarbonate bird spikes fitted to ledges, sills, parapets, and signage to prevent birds from landing and roosting. Bird wire systems provide a discreet alternative for listed and heritage buildings.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-secondary text-white rounded-xl flex items-center justify-center flex-shrink-0 font-bold">3</div>
+            <div>
+              <h3 class="font-bold text-neutral-dark mb-1">Hawking &amp; Deterrents</h3>
+              <p class="text-neutral-mid">For large or persistent bird problems, we can arrange specialist hawking services where trained birds of prey are used to naturally disperse pest birds from your site.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-accent text-white rounded-xl flex items-center justify-center flex-shrink-0 font-bold">4</div>
+            <div>
+              <h3 class="font-bold text-neutral-dark mb-1">Cleaning &amp; Guano Removal</h3>
+              <p class="text-neutral-mid">We provide specialist guano (bird dropping) removal and biocidal cleaning. This is essential for health and safety compliance, particularly in commercial settings where droppings can harbour dangerous pathogens.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 lg:py-20 bg-neutral-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl lg:text-3xl font-extrabold text-neutral-dark mb-8">Frequently Asked Questions</h2>
+        <div class="space-y-0">
+          <div class="faq-item py-5">
+            <button class="faq-question flex items-center justify-between w-full text-left">
+              <span class="font-semibold text-neutral-dark pr-4">Is it legal to remove pigeons?</span>
+              <svg class="faq-chevron w-5 h-5 text-neutral-mid flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-neutral-mid pt-3">All wild birds are protected under the Wildlife and Countryside Act 1981. However, feral pigeons, crows, and some gull species can be controlled under general licences where they pose a public health risk or cause damage. We only use legal, humane methods and are fully compliant with all relevant legislation.</p>
+            </div>
+          </div>
+          <div class="faq-item py-5">
+            <button class="faq-question flex items-center justify-between w-full text-left">
+              <span class="font-semibold text-neutral-dark pr-4">What bird control methods do you use?</span>
+              <svg class="faq-chevron w-5 h-5 text-neutral-mid flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-neutral-mid pt-3">We use a range of proven methods including bird netting, stainless steel spikes, post-and-wire systems, hawking, and specialist cleaning. The best solution depends on the species, location, and scale of the problem. We always recommend humane deterrent methods first.</p>
+            </div>
+          </div>
+          <div class="faq-item py-5">
+            <button class="faq-question flex items-center justify-between w-full text-left">
+              <span class="font-semibold text-neutral-dark pr-4">Do you offer commercial bird control?</span>
+              <svg class="faq-chevron w-5 h-5 text-neutral-mid flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-neutral-mid pt-3">Yes. We work with a wide range of commercial clients including warehouses, retail units, offices, restaurants, and listed buildings. We provide tailored solutions, ongoing maintenance contracts, and can work around your business hours to minimise disruption.</p>
+            </div>
+          </div>
+          <div class="faq-item py-5">
+            <button class="faq-question flex items-center justify-between w-full text-left">
+              <span class="font-semibold text-neutral-dark pr-4">How long does bird proofing installation take?</span>
+              <svg class="faq-chevron w-5 h-5 text-neutral-mid flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-neutral-mid pt-3">Installation time depends on the type and scale of the work. Simple spike installations on ledges can be completed in a day. Larger netting projects for commercial buildings may take several days. We&rsquo;ll provide a clear timeline as part of your quote.</p>
+            </div>
+          </div>
+          <div class="faq-item py-5">
+            <button class="faq-question flex items-center justify-between w-full text-left">
+              <span class="font-semibold text-neutral-dark pr-4">How much does bird control cost?</span>
+              <svg class="faq-chevron w-5 h-5 text-neutral-mid flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-neutral-mid pt-3">Costs vary significantly depending on the type of deterrent, the size of the area, and access requirements. We provide a free site survey and detailed, no-obligation quote. All pricing is transparent with no hidden fees.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-16 lg:py-20 bg-primary">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4">Got a Bird Problem?</h2>
+      <p class="text-lg text-white/70 mb-8">Don&rsquo;t let pest birds damage your property or harm your business. Get in touch for a free site survey and quote.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button onclick="openQuoteModal()" class="btn-primary text-base !py-3.5 !px-8 justify-center">Get Your Free Quote</button>
+        <a href="tel:6312817386" class="btn-secondary text-base !py-3.5 !px-8 justify-center">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          Call 631-281-7386
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Services -->
+  <section class="py-12 lg:py-16 bg-neutral-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h3 class="text-xl font-bold text-neutral-dark mb-6 text-center">Related Services</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <a href="/services/rat-control.html" class="service-card bg-white rounded-xl p-5 text-center group">
+          <div class="text-2xl mb-2">&#x1F400;</div>
+          <h4 class="font-bold text-neutral-dark text-sm group-hover:text-secondary transition-colors">Rat Control</h4>
+        </a>
+        <a href="/services/mouse-control.html" class="service-card bg-white rounded-xl p-5 text-center group">
+          <div class="text-2xl mb-2">&#x1F401;</div>
+          <h4 class="font-bold text-neutral-dark text-sm group-hover:text-secondary transition-colors">Mouse Control</h4>
+        </a>
+        <a href="/services/wasp-control.html" class="service-card bg-white rounded-xl p-5 text-center group">
+          <div class="text-2xl mb-2">&#x1F41D;</div>
+          <h4 class="font-bold text-neutral-dark text-sm group-hover:text-secondary transition-colors">Wasp Control</h4>
+        </a>
+        <a href="/services/mosquito-control.html" class="service-card bg-white rounded-xl p-5 text-center group">
+          <div class="text-2xl mb-2">&#x1FAB5;</div>
+          <h4 class="font-bold text-neutral-dark text-sm group-hover:text-secondary transition-colors">Woodworm Control</h4>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-dark pt-16 pb-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 pb-12 border-b border-white/10">
+        <div>
+          <div class="mb-4"><span class="text-2xl font-extrabold text-white">BARRON</span><span class="text-xs font-semibold text-neutral-mid tracking-[0.2em] uppercase ml-1">Pest Control</span></div>
+          <p class="text-sm text-gray-400 mb-4">Family-run pest control serving Suffolk County, Nassau County, The Hamptons and surrounding areas.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="/services/rat-control.html" class="text-sm text-gray-400 hover:text-white transition-colors">Rat Control</a></li>
+            <li><a href="/services/mouse-control.html" class="text-sm text-gray-400 hover:text-white transition-colors">Mouse Control</a></li>
+            <li><a href="/services/wasp-control.html" class="text-sm text-gray-400 hover:text-white transition-colors">Wasp Control</a></li>
+            <li><a href="/services/cockroach-control.html" class="text-sm text-gray-400 hover:text-white transition-colors">Cockroach Control</a></li>
+            <li><a href="/services/flea-control.html" class="text-sm text-gray-400 hover:text-white transition-colors">Flea Control</a></li>
+            <li><a href="/services/bed-bug-control.html" class="text-sm text-gray-400 hover:text-white transition-colors">Bed Bug Control</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Areas</h4>
+          <ul class="space-y-2">
+            <li><a href="/areas/suffolk-county.html" class="text-sm text-gray-400 hover:text-white transition-colors">Suffolk County</a></li>
+            <li><a href="/areas/nassau-county.html" class="text-sm text-gray-400 hover:text-white transition-colors">Nassau County</a></li>
+            <li><a href="/areas/hamptons.html" class="text-sm text-gray-400 hover:text-white transition-colors">The Hamptons</a></li>
+            <li><a href="/areas/north-shore.html" class="text-sm text-gray-400 hover:text-white transition-colors">North Shore</a></li>
+            <li><a href="/areas/south-shore.html" class="text-sm text-gray-400 hover:text-white transition-colors">South Shore</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Contact</h4>
+          <ul class="space-y-3">
+            <li><a href="tel:6312817386" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>631-281-7386</a></li>
+            <li><a href="mailto:solutions@barronpestcontrol.com" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>solutions@barronpestcontrol.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6">
+        <p class="text-xs text-gray-500">&copy; 2026 Barron Pest Control. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="/privacy.html" class="text-xs text-gray-500 hover:text-gray-400 transition-colors">Privacy Policy</a>
+          <a href="/terms.html" class="text-xs text-gray-500 hover:text-gray-400 transition-colors">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quote Modal -->
+  <div id="quoteModal" hidden class="modal-overlay fixed inset-0 z-[70] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+    <div class="modal-content bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto">
+      <div class="p-6 lg:p-8">
+        <div class="flex items-center justify-between mb-6">
+          <div><h3 class="text-xl font-bold text-neutral-dark">Get Your Free Quote</h3><p class="text-sm text-neutral-mid">We&rsquo;ll get back to you the same day.</p></div>
+          <button onclick="closeQuoteModal()" class="p-2 text-neutral-mid hover:text-neutral-dark rounded-lg hover:bg-gray-100" aria-label="Close"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+        </div>
+        <form id="quoteForm" onsubmit="handleQuoteSubmit(event)" class="space-y-4">
+          <div><label for="quoteName" class="block text-sm font-medium text-neutral-dark mb-1">Your Name *</label><input type="text" id="quoteName" name="name" required class="form-input w-full px-4 py-2.5 border border-gray-200 rounded-lg text-neutral-dark text-sm" placeholder="John Smith"></div>
+          <div><label for="quotePhone" class="block text-sm font-medium text-neutral-dark mb-1">Phone *</label><input type="tel" id="quotePhone" name="phone" required class="form-input w-full px-4 py-2.5 border border-gray-200 rounded-lg text-neutral-dark text-sm" placeholder="(631) 555-0100"></div>
+          <div><label for="quoteEmail" class="block text-sm font-medium text-neutral-dark mb-1">Email</label><input type="email" id="quoteEmail" name="email" class="form-input w-full px-4 py-2.5 border border-gray-200 rounded-lg text-neutral-dark text-sm" placeholder="john@example.com"></div>
+          <div><label for="quoteZIP Code" class="block text-sm font-medium text-neutral-dark mb-1">ZIP Code *</label><input type="text" id="quoteZIP Code" name="ZIP code" required class="form-input w-full px-4 py-2.5 border border-gray-200 rounded-lg text-neutral-dark text-sm" placeholder="11788"></div>
+          <div>
+            <label for="quotePest" class="block text-sm font-medium text-neutral-dark mb-1">Type of Pest *</label>
+            <select id="quotePest" name="pest" required class="form-input w-full px-4 py-2.5 border border-gray-200 rounded-lg text-neutral-dark text-sm bg-white">
+              <option value="rats">Rats</option>
+              <option value="mice">Mice</option>
+              <option value="wasps">Wasps</option>
+              <option value="cockroaches">Cockroaches</option>
+              <option value="fleas">Fleas</option>
+              <option value="bed-bugs">Bed Bugs</option>
+              <option value="birds" selected>Birds</option>
+              <option value="mosquitoes">Mosquitoes / Ticks</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div><label for="quoteMessage" class="block text-sm font-medium text-neutral-dark mb-1">Describe Your Problem</label><textarea id="quoteMessage" name="message" rows="3" class="form-input w-full px-4 py-2.5 border border-gray-200 rounded-lg text-neutral-dark text-sm resize-none" placeholder="Tell us about your bird problem..."></textarea></div>
+          <button type="submit" class="btn-primary w-full justify-center text-base !py-3">Send Quote Request</button>
+          <p class="text-xs text-center text-neutral-mid">Free, no-obligation quote. We respond within 2 hours.</p>
+        </form>
+        <div id="quoteSuccess" class="hidden text-center py-8">
+          <div class="w-16 h-16 bg-accent/10 text-accent rounded-full flex items-center justify-center mx-auto mb-4"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></div>
+          <h3 class="text-xl font-bold text-neutral-dark mb-2">Quote Request Sent!</h3>
+          <p class="text-neutral-mid mb-4">Lance will be in touch shortly.</p>
+          <button onclick="closeQuoteModal()" class="btn-outline">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Text + Mobile CTA -->
+  <a href="sms:6312817386" class="sms-widget hidden md:flex fixed bottom-6 right-6 z-40 w-14 h-14 bg-secondary rounded-full items-center justify-center shadow-lg hover:bg-red-800" aria-label="Text Us">
+    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+  </a>
+  <div class="mobile-cta-bar md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-200 px-4 py-3 flex gap-3">
+    <a href="tel:6312817386" class="flex-1 flex items-center justify-center gap-2 bg-primary text-white font-semibold py-3 rounded-lg text-sm"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>Call Now</a>
+    <a href="sms:6312817386" target="_blank" rel="noopener" class="flex-1 flex items-center justify-center gap-2 bg-secondary text-white font-semibold py-3 rounded-lg text-sm"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>Text</a>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

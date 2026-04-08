@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Control | Expert Mouse Removal | Barron Pest Control</title>
+  <meta name="description" content="Professional mouse control and removal in Suffolk County, Nassau County & The Hamptons. RSPH qualified, same-day service. Free survey. Call 631-281-7386.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://barronpestcontrol.com/services/mouse-control">
+  <meta property="og:title" content="Mouse Control | Barron Pest Control">
+  <meta property="og:description" content="Professional mouse control and removal across Long Island. RSPH qualified, same-day service available.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700;800;900&family=Roboto:wght@400;500;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { primary: '#1B2A4A', secondary: '#2B7CE9', accent: '#22C55E', 'accent-hover': '#16A34A', 'neutral-light': '#F8FAFC', 'neutral-mid': '#64748B', 'neutral-dark': '#0F172A', emergency: '#EF4444' }, fontFamily: { sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'] } } }
+    }
+  </script>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Mouse Control",
+    "provider": { "@type": "PestControlService", "name": "Barron Pest Control", "telephone": "6312817386" },
+    "areaServed": [{"@type": "City", "name": "Suffolk County"}, {"@type": "City", "name": "Nassau County"}, {"@type": "City", "name": "The Hamptons"}],
+    "description": "Professional mouse control and removal services for homes and businesses across Long Island."
+  }
+  </script>
+</head>
+<body class="bg-white text-neutral-mid font-sans antialiased">
+
+  <!-- HEADER (same as homepage) -->
+  <header id="header" class="header fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="/" class="flex items-center gap-2 flex-shrink-0">
+          <div class="flex flex-col leading-none">
+            <span class="text-2xl lg:text-3xl font-extrabold text-white tracking-tight">BARRON</span>
+            <span class="text-[0.6rem] lg:text-xs font-semibold text-neutral-mid tracking-[0.2em] uppercase">Pest Control</span>
+          </div>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="/services.html" class="text-sm font-medium text-secondary">Services</a>
+          <a href="/commercial.html" class="text-sm font-medium text-neutral-dark hover:text-secondary transition-colors">Commercial</a>
+          <a href="/pest-library.html" class="text-sm font-medium text-neutral-dark hover:text-secondary transition-colors">Pest Library</a>
+          <a href="/about.html" class="text-sm font-medium text-neutral-dark hover:text-secondary transition-colors">About</a>
+          <a href="/contact.html" class="text-sm font-medium text-neutral-dark hover:text-secondary transition-colors">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="tel:6312817386" class="hidden md:flex items-center gap-2 text-sm font-semibold text-primary hover:text-secondary transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            631-281-7386
+          </a>
+          <button onclick="openQuoteModal()" class="btn-primary text-sm !py-2 !px-4">Get Free Quote</button>
+          <button id="mobileMenuToggle" class="lg:hidden p-2 text-neutral-dark" aria-label="Open menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu fixed inset-0 z-[60] bg-white">
+    <div class="flex items-center justify-between p-4 border-b border-gray-100">
+      <span class="text-xl font-extrabold text-primary">BARRON</span>
+      <button id="mobileMenuClose" class="p-2 text-neutral-dark" aria-label="Close menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+    </div>
+    <nav class="p-6 space-y-4">
+      <a href="/" class="block text-lg font-semibold text-primary">Home</a>
+      <a href="/services.html" class="block text-lg font-semibold text-secondary">Services</a>
+      <a href="/commercial.html" class="block text-lg font-semibold text-primary">Commercial</a>
+      <a href="/about.html" class="block text-lg font-semibold text-primary">About</a>
+      <a href="/contact.html" class="block text-lg font-semibold text-primary">Contact</a>
+      <div class="pt-4 border-t border-gray-100">
+        <a href="tel:6312817386" class="flex items-center gap-3 text-primary font-semibold mb-3">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          631-281-7386
+        </a>
+        <button onclick="openQuoteModal(); closeMobileMenu();" class="btn-primary w-full justify-center">Get Free Quote</button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="pt-20 lg:pt-24 bg-neutral-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <nav class="flex items-center gap-2 text-sm text-neutral-mid">
+        <a href="/" class="hover:text-secondary transition-colors">Home</a>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        <a href="/services.html" class="hover:text-secondary transition-colors">Services</a>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        <span class="text-neutral-dark font-medium">Mouse Control</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Service Hero -->
+  <section class="bg-neutral-light pb-12 lg:pb-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-secondary/10 text-secondary rounded-full px-4 py-1.5 text-sm font-medium mb-4">&#x1F401; Rodent Control</div>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-neutral-dark mb-4 leading-tight">Professional Mouse Control &amp; Removal</h1>
+          <p class="text-lg text-neutral-mid mb-6">Mice can squeeze through gaps as small as 6mm, making them one of the most common household pests. Our NYSDEC Licensed qualified technicians deliver fast, effective mouse control with proofing to stop them coming back.</p>
+          <div class="flex flex-col sm:flex-row gap-3 mb-6">
+            <button onclick="openQuoteModal()" class="btn-primary text-base !py-3 !px-6 justify-center">Get a Free Quote</button>
+            <a href="tel:6312817386" class="btn-outline text-base !py-3 !px-6 justify-center">Call 631-281-7386</a>
+          </div>
+          <div class="flex flex-wrap gap-4 text-sm">
+            <span class="flex items-center gap-1.5 text-neutral-mid"><svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Same-day response</span>
+            <span class="flex items-center gap-1.5 text-neutral-mid"><svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Free survey</span>
+            <span class="flex items-center gap-1.5 text-neutral-mid"><svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Proofing included</span>
+          </div>
+        </div>
+        <div class="aspect-[4/3] rounded-2xl overflow-hidden">
+          <img src="../images/pests/mouse-hero.png" alt="House mouse peeking from behind a wall - professional mouse control by Barron Pest Control" class="w-full h-full object-cover" loading="eager">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signs of Infestation -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl lg:text-3xl font-extrabold text-neutral-dark mb-6">Signs You Have a Mouse Problem</h2>
+        <p class="text-neutral-mid mb-8">Mice are small and elusive, but they leave plenty of evidence behind. Look out for these common signs:</p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="flex items-start gap-3 p-4 bg-neutral-light rounded-xl">
+            <div class="w-8 h-8 bg-emergency/10 text-emergency rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-neutral-dark text-sm">Small Droppings</h3>
+              <p class="text-sm text-neutral-mid">Tiny dark droppings (3&ndash;8mm long), shaped like grains of rice, found in cupboards, along walls, and near food sources.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-neutral-light rounded-xl">
+            <div class="w-8 h-8 bg-emergency/10 text-emergency rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-neutral-dark text-sm">Gnaw Marks</h3>
+              <p class="text-sm text-neutral-mid">Small, neat gnaw marks on food packaging, furniture, skirting boards, and electrical cables. Mice need to gnaw constantly to keep their teeth short.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-neutral-light rounded-xl">
+            <div class="w-8 h-8 bg-emergency/10 text-emergency rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-neutral-dark text-sm">Nesting Materials</h3>
+              <p class="text-sm text-neutral-mid">Shredded paper, fabric, loft insulation, and other soft materials gathered into nests, often found in hidden, warm areas.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-neutral-light rounded-xl">
+            <div class="w-8 h-8 bg-emergency/10 text-emergency rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-neutral-dark text-sm">Urine Pillars &amp; Smell</h3>
+              <p class="text-sm text-neutral-mid">In heavy infestations, mouse urine can build up into small mound-shaped &ldquo;urine pillars&rdquo; made of grease, dirt, and urine. A strong ammonia smell is also common.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 p-4 bg-neutral-light rounded-xl">
+            <div class="w-8 h-8 bg-emergency/10 text-emergency rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-neutral-dark text-sm">Scratching in Walls</h3>
+              <p class="text-sm text-neutral-mid">Scratching, scurrying, or rustling sounds in walls, ceilings, and under floorboards, particularly at night when mice are most active.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Health Risks -->
+  <section class="py-16 lg:py-20 bg-neutral-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl lg:text-3xl font-extrabold text-neutral-dark mb-6">Why Mouse Control Is Essential</h2>
+        <p class="text-neutral-mid mb-6">Mice may be small, but they cause big problems. Here&rsquo;s why professional treatment is important:</p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start gap-3"><span class="w-6 h-6 bg-emergency/10 text-emergency rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">!</span><span><strong class="text-neutral-dark">Disease transmission:</strong> Mice carry hantavirus, salmonella, and other dangerous pathogens. Their urine and droppings contaminate surfaces and food stores.</span></li>
+          <li class="flex items-start gap-3"><span class="w-6 h-6 bg-emergency/10 text-emergency rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">!</span><span><strong class="text-neutral-dark">Food contamination:</strong> Mice urinate constantly as they move, contaminating food preparation areas and stored goods, creating serious hygiene risks.</span></li>
+          <li class="flex items-start gap-3"><span class="w-6 h-6 bg-emergency/10 text-emergency rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">!</span><span><strong class="text-neutral-dark">Property damage:</strong> Mice gnaw on electrical cables, plumbing, insulation, and woodwork. Damage to wiring is a significant fire risk.</span></li>
+          <li class="flex items-start gap-3"><span class="w-6 h-6 bg-emergency/10 text-emergency rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">!</span><span><strong class="text-neutral-dark">Rapid breeding:</strong> A single female mouse can produce up to 10 litters per year, with 5&ndash;6 young per litter. Populations can explode in weeks if left untreated.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Treatment Process -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl lg:text-3xl font-extrabold text-neutral-dark mb-6">Our Mouse Treatment Process</h2>
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-secondary text-white rounded-xl flex items-center justify-center flex-shrink-0 font-bold">1</div>
+            <div>
+              <h3 class="font-bold text-neutral-dark mb-1">Free Survey &amp; Assessment</h3>
+              <p class="text-neutral-mid">We carry out a thorough inspection of your property to assess the scale of the infestation, identify entry points, and determine the species involved.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-secondary text-white rounded-xl flex items-center justify-center flex-shrink-0 font-bold">2</div>
+            <div>
+              <h3 class="font-bold text-neutral-dark mb-1">Bait Stations &amp; Traps</h3>
+              <p class="text-neutral-mid">We use a combination of tamper-resistant bait stations and professional traps, strategically placed along mouse runs and activity hotspots for maximum effectiveness.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-secondary text-white rounded-xl flex items-center justify-center flex-shrink-0 font-bold">3</div>
+            <div>
+              <h3 class="font-bold text-neutral-dark mb-1">Proofing Entry Points</h3>
+              <p class="text-neutral-mid">Mice can fit through gaps as small as 6mm &mdash; roughly the width of a pencil. We seal entry points with wire wool, cement, and metal plates to prevent re-entry.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-accent text-white rounded-xl flex items-center justify-center flex-shrink-0 font-bold">4</div>
+            <div>
+              <h3 class="font-bold text-neutral-dark mb-1">Follow-Up Visits</h3>
+              <p class="text-neutral-mid">We return to check bait stations and traps, replenish as needed, and confirm the infestation has been fully resolved before closing the job.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 lg:py-20 bg-neutral-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl lg:text-3xl font-extrabold text-neutral-dark mb-8">Frequently Asked Questions</h2>
+        <div class="space-y-0">
+          <div class="faq-item py-5">
+            <button class="faq-question flex items-center justify-between w-full text-left">
+              <span class="font-semibold text-neutral-dark pr-4">How do mice get into my house?</span>
+              <svg class="faq-chevron w-5 h-5 text-neutral-mid flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-neutral-mid pt-3">Mice can squeeze through gaps as small as 6mm. Common entry points include gaps around pipes, beneath doors, through air vents, cracks in brickwork, and openings around cables. They are excellent climbers and can also enter through roof-level gaps.</p>
+            </div>
+          </div>
+          <div class="faq-item py-5">
+            <button class="faq-question flex items-center justify-between w-full text-left">
+              <span class="font-semibold text-neutral-dark pr-4">What&rsquo;s the difference between mice and rats?</span>
+              <svg class="faq-chevron w-5 h-5 text-neutral-mid flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-neutral-mid pt-3">Mice are much smaller than rats (7&ndash;10cm body length vs 20&ndash;27cm for rats). Mouse droppings are 3&ndash;8mm long compared to 12&ndash;18mm for rats. Mice tend to live indoors year-round, while rats often move between indoor and outdoor environments. The treatment approach differs for each.</p>
+            </div>
+          </div>
+          <div class="faq-item py-5">
+            <button class="faq-question flex items-center justify-between w-full text-left">
+              <span class="font-semibold text-neutral-dark pr-4">Is mouse treatment safe for pets?</span>
+              <svg class="faq-chevron w-5 h-5 text-neutral-mid flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-neutral-mid pt-3">Yes. All bait is placed inside tamper-resistant, lockable stations that pets cannot access. We also use snap traps in enclosed stations where appropriate. We&rsquo;ll discuss your specific situation and recommend the safest approach for your home.</p>
+            </div>
+          </div>
+          <div class="faq-item py-5">
+            <button class="faq-question flex items-center justify-between w-full text-left">
+              <span class="font-semibold text-neutral-dark pr-4">How long does mouse treatment take to work?</span>
+              <svg class="faq-chevron w-5 h-5 text-neutral-mid flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-neutral-mid pt-3">Most mouse infestations are resolved within 1&ndash;3 weeks. You should notice a reduction in activity within the first few days. Combined with proofing, this gives long-lasting results. We include follow-up visits as standard.</p>
+            </div>
+          </div>
+          <div class="faq-item py-5">
+            <button class="faq-question flex items-center justify-between w-full text-left">
+              <span class="font-semibold text-neutral-dark pr-4">How much does mouse control cost?</span>
+              <svg class="faq-chevron w-5 h-5 text-neutral-mid flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="text-neutral-mid pt-3">Every situation is different, so we provide a free, no-obligation quote after assessing your property. Our pricing is competitive and transparent with no hidden fees. The initial survey is always free.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-16 lg:py-20 bg-primary">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl lg:text-4xl font-extrabold text-white mb-4">Got a Mouse Problem?</h2>
+      <p class="text-lg text-white/70 mb-8">Don&rsquo;t let mice damage your property or contaminate your home. Get in touch for a free, no-obligation survey and quote.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <button onclick="openQuoteModal()" class="btn-primary text-base !py-3.5 !px-8 justify-center">Get Your Free Quote</button>
+        <a href="tel:6312817386" class="btn-secondary text-base !py-3.5 !px-8 justify-center">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          Call 631-281-7386
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Services -->
+  <section class="py-12 lg:py-16 bg-neutral-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h3 class="text-xl font-bold text-neutral-dark mb-6 text-center">Related Services</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <a href="/services/rat-control.html" class="service-card bg-white rounded-xl p-5 text-center group">
+          <div class="text-2xl mb-2">&#x1F400;</div>
+          <h4 class="font-bold text-neutral-dark text-sm group-hover:text-secondary transition-colors">Rat Control</h4>
+        </a>
+        <a href="/services/cockroach-control.html" class="service-card bg-white rounded-xl p-5 text-center group">
+          <div class="text-2xl mb-2">&#x1FAB3;</div>
+          <h4 class="font-bold text-neutral-dark text-sm group-hover:text-secondary transition-colors">Cockroach Control</h4>
+        </a>
+        <a href="/services/flea-control.html" class="service-card bg-white rounded-xl p-5 text-center group">
+          <div class="text-2xl mb-2">&#x1F99F;</div>
+          <h4 class="font-bold text-neutral-dark text-sm group-hover:text-secondary transition-colors">Flea Control</h4>
+        </a>
+        <a href="/services/bed-bug-control.html" class="service-card bg-white rounded-xl p-5 text-center group">
+          <div class="text-2xl mb-2">&#x1F6CF;&#xFE0F;</div>
+          <h4 class="font-bold text-neutral-dark text-sm group-hover:text-secondary transition-colors">Bed Bug Control</h4>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-dark pt-16 pb-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 pb-12 border-b border-white/10">
+        <div>
+          <div class="mb-4"><span class="text-2xl font-extrabold text-white">BARRON</span><span class="text-xs font-semibold text-neutral-mid tracking-[0.2em] uppercase ml-1">Pest Control</span></div>
+          <p class="text-sm text-gray-400 mb-4">Family-run pest control serving Suffolk County, Nassau County, The Hamptons and surrounding areas.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="/services/rat-control.html" class="text-sm text-gray-400 hover:text-white transition-colors">Rat Control</a></li>
+            <li><a href="/services/mouse-control.html" class="text-sm text-white font-medium">Mouse Control</a></li>
+            <li><a href="/services/wasp-control.html" class="text-sm text-gray-400 hover:text-white transition-colors">Wasp Control</a></li>
+            <li><a href="/services/cockroach-control.html" class="text-sm text-gray-400 hover:text-white transition-colors">Cockroach Control</a></li>
+            <li><a href="/services/flea-control.html" class="text-sm text-gray-400 hover:text-white transition-colors">Flea Control</a></li>
+            <li><a href="/services/bed-bug-control.html" class="text-sm text-gray-400 hover:text-white transition-colors">Bed Bug Control</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Areas</h4>
+          <ul class="space-y-2">
+            <li><a href="/areas/suffolk-county.html" class="text-sm text-gray-400 hover:text-white transition-colors">Suffolk County</a></li>
+            <li><a href="/areas/nassau-county.html" class="text-sm text-gray-400 hover:text-white transition-colors">Nassau County</a></li>
+            <li><a href="/areas/hamptons.html" class="text-sm text-gray-400 hover:text-white transition-colors">The Hamptons</a></li>
+            <li><a href="/areas/north-shore.html" class="text-sm text-gray-400 hover:text-white transition-colors">North Shore</a></li>
+            <li><a href="/areas/south-shore.html" class="text-sm text-gray-400 hover:text-white transition-colors">South Shore</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Contact</h4>
+          <ul class="space-y-3">
+            <li><a href="tel:6312817386" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>631-281-7386</a></li>
+            <li><a href="mailto:solutions@barronpestcontrol.com" class="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>solutions@barronpestcontrol.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6">
+        <p class="text-xs text-gray-500">&copy; 2026 Barron Pest Control. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="/privacy.html" class="text-xs text-gray-500 hover:text-gray-400 transition-colors">Privacy Policy</a>
+          <a href="/terms.html" class="text-xs text-gray-500 hover:text-gray-400 transition-colors">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quote Modal -->
+  <div id="quoteModal" hidden class="modal-overlay fixed inset-0 z-[70] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+    <div class="modal-content bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto">
+      <div class="p-6 lg:p-8">
+        <div class="flex items-center justify-between mb-6">
+          <div><h3 class="text-xl font-bold text-neutral-dark">Get Your Free Quote</h3><p class="text-sm text-neutral-mid">We&rsquo;ll get back to you the same day.</p></div>
+          <button onclick="closeQuoteModal()" class="p-2 text-neutral-mid hover:text-neutral-dark rounded-lg hover:bg-gray-100" aria-label="Close"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+        </div>
+        <form id="quoteForm" onsubmit="handleQuoteSubmit(event)" class="space-y-4">
+          <div><label for="quoteName" class="block text-sm font-medium text-neutral-dark mb-1">Your Name *</label><input type="text" id="quoteName" name="name" required class="form-input w-full px-4 py-2.5 border border-gray-200 rounded-lg text-neutral-dark text-sm" placeholder="John Smith"></div>
+          <div><label for="quotePhone" class="block text-sm font-medium text-neutral-dark mb-1">Phone *</label><input type="tel" id="quotePhone" name="phone" required class="form-input w-full px-4 py-2.5 border border-gray-200 rounded-lg text-neutral-dark text-sm" placeholder="(631) 555-0100"></div>
+          <div><label for="quoteEmail" class="block text-sm font-medium text-neutral-dark mb-1">Email</label><input type="email" id="quoteEmail" name="email" class="form-input w-full px-4 py-2.5 border border-gray-200 rounded-lg text-neutral-dark text-sm" placeholder="john@example.com"></div>
+          <div><label for="quoteZIP Code" class="block text-sm font-medium text-neutral-dark mb-1">ZIP Code *</label><input type="text" id="quoteZIP Code" name="ZIP code" required class="form-input w-full px-4 py-2.5 border border-gray-200 rounded-lg text-neutral-dark text-sm" placeholder="11788"></div>
+          <div>
+            <label for="quotePest" class="block text-sm font-medium text-neutral-dark mb-1">Type of Pest *</label>
+            <select id="quotePest" name="pest" required class="form-input w-full px-4 py-2.5 border border-gray-200 rounded-lg text-neutral-dark text-sm bg-white">
+              <option value="rats">Rats</option>
+              <option value="mice" selected>Mice</option>
+              <option value="wasps">Wasps</option>
+              <option value="cockroaches">Cockroaches</option>
+              <option value="fleas">Fleas</option>
+              <option value="bed-bugs">Bed Bugs</option>
+              <option value="birds">Birds</option>
+              <option value="mosquitoes">Mosquitoes / Ticks</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div><label for="quoteMessage" class="block text-sm font-medium text-neutral-dark mb-1">Describe Your Problem</label><textarea id="quoteMessage" name="message" rows="3" class="form-input w-full px-4 py-2.5 border border-gray-200 rounded-lg text-neutral-dark text-sm resize-none" placeholder="Tell us about your mouse problem..."></textarea></div>
+          <button type="submit" class="btn-primary w-full justify-center text-base !py-3">Send Quote Request</button>
+          <p class="text-xs text-center text-neutral-mid">Free, no-obligation quote. We respond within 2 hours.</p>
+        </form>
+        <div id="quoteSuccess" class="hidden text-center py-8">
+          <div class="w-16 h-16 bg-accent/10 text-accent rounded-full flex items-center justify-center mx-auto mb-4"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></div>
+          <h3 class="text-xl font-bold text-neutral-dark mb-2">Quote Request Sent!</h3>
+          <p class="text-neutral-mid mb-4">Lance will be in touch shortly.</p>
+          <button onclick="closeQuoteModal()" class="btn-outline">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Text + Mobile CTA -->
+  <a href="sms:6312817386" class="sms-widget hidden md:flex fixed bottom-6 right-6 z-40 w-14 h-14 bg-secondary rounded-full items-center justify-center shadow-lg hover:bg-red-800" aria-label="Text Us">
+    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+  </a>
+  <div class="mobile-cta-bar md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-200 px-4 py-3 flex gap-3">
+    <a href="tel:6312817386" class="flex-1 flex items-center justify-center gap-2 bg-primary text-white font-semibold py-3 rounded-lg text-sm"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>Call Now</a>
+    <a href="sms:6312817386" target="_blank" rel="noopener" class="flex-1 flex items-center justify-center gap-2 bg-secondary text-white font-semibold py-3 rounded-lg text-sm"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>Text</a>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
