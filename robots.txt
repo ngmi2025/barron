@@ -1,19 +1,8 @@
-# JLM Pest Control - robots.txt
-# https://www.jlmpestcontrol.co.uk
+# Barron Pest Control - robots.txt
+# https://barronpestcontrol.com
 
 User-agent: *
-Allow: /
+Disallow: /
 
-# Block admin/system paths
-Disallow: /404.html
-Disallow: /_redirects
-
-# Sitemap
-Sitemap: https://www.jlmpestcontrol.co.uk/sitemap.xml
-
-# Crawl-delay for polite crawling
-User-agent: AhrefsBot
-Crawl-delay: 10
-
-User-agent: SemrushBot
-Crawl-delay: 10
+# Sitemap (blocked while noindex is active)
+# Sitemap: https://barronpestcontrol.com/sitemap.xml
