@@ -590,184 +590,192 @@
     </div>
   </section>
 
-  <!-- ========== TESTIMONIALS ========== -->
+  <!-- ========== REVIEWS ========== -->
   <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-12">
-        <p class="text-sm font-semibold text-secondary uppercase tracking-wider mb-2">Testimonials</p>
-        <a href="https://www.google.com/search?hl=en-GB&gl=uk&q=Barron+Pest+Control&ludocid=12656657129545949978&lsig=AB86z5UCafyPMV9-1EQWuzO50Ycw#lrd=0x89e85a63ececb0db:0xafa57a99fa80631a,1,,,," target="_blank" rel="noopener" class="hover:underline">
-          <h2 class="text-3xl lg:text-4xl font-extrabold text-neutral-dark mb-4">What Long Islanders Say About Barron</h2>
-        </a>
-        <div class="flex items-center justify-center gap-2 mb-2">
-          <div class="flex text-accent text-xl">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <div class="text-center mb-8">
+        <p class="text-sm font-semibold text-secondary uppercase tracking-wider mb-2">Our Reviews</p>
+        <h2 class="text-3xl lg:text-4xl font-extrabold text-neutral-dark mb-4">Long Island Homeowners Choose Barron</h2>
+      </div>
+
+      <!-- Tabs: Google / Yelp -->
+      <div class="bg-neutral-light rounded-2xl p-6 lg:p-8 mb-8">
+        <div class="flex items-center gap-6 mb-4 border-b border-gray-200 pb-3">
+          <button onclick="showReviewTab('google')" id="tab-google" class="flex items-center gap-2 text-sm font-semibold text-neutral-dark border-b-2 border-neutral-dark pb-1 transition-colors">
+            <svg class="w-4 h-4" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            Google
+          </button>
+          <button onclick="showReviewTab('yelp')" id="tab-yelp" class="flex items-center gap-2 text-sm font-semibold text-neutral-mid pb-1 border-b-2 border-transparent hover:text-neutral-dark transition-colors">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="#FF1A1A"><path d="M20.16 12.73l-4.27-.93c-.55-.12-.76.36-.47.82l2.28 3.65c.28.46.87.5 1.2.09l1.73-2.14c.33-.42.07-1.37-.47-1.49zm-5.89 3.04l-2.7 3.38c-.35.43-.05 1.06.49 1.03l2.89-.16c.53-.03.88-.52.72-1.01l-1.19-3.26c-.16-.43-.86-.43-1.21.02zM12.3 2.27c-.38-.48-1.15-.35-1.33.23L7.73 12.3c-.17.55.28.97.8.75l4.14-1.73c.52-.22.64-.88.23-1.25L12.3 2.27zm-1.72 13.08l-4.37-.52c-.55-.07-.85.46-.61.92l1.38 2.66c.24.47.82.62 1.2.31l2.58-2.12c.4-.32.36-1.18-.18-1.25zM7.47 10.3L3.9 8.64c-.5-.23-1.08.17-1.01.72l.43 3.46c.07.56.56.87 1.04.65l3.27-1.46c.46-.21.34-1.49-.16-1.71z"/></svg>
+            Yelp
+          </button>
+        </div>
+
+        <!-- Rating summary -->
+        <div id="rating-google" class="flex items-center gap-2 mb-1">
+          <span class="font-bold text-neutral-dark">Excellent</span>
+          <div class="flex text-accent text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <span class="text-neutral-dark font-bold">4.9</span>
-          <span class="text-neutral-mid">&mdash; from 100+ Google Reviews</span>
+          <span class="text-neutral-mid">|</span>
+          <span class="text-neutral-mid">100+ reviews</span>
+        </div>
+        <div id="rating-yelp" class="hidden flex items-center gap-2 mb-1">
+          <span class="font-bold text-neutral-dark">Excellent</span>
+          <div class="flex text-[#FF1A1A] text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <span class="text-neutral-dark font-bold">5.0</span>
+          <span class="text-neutral-mid">|</span>
+          <span class="text-neutral-mid">6 reviews</span>
         </div>
       </div>
-      <div class="relative">
-        <!-- Scroll hint: fade on right edge -->
-        <div class="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none hidden lg:block"></div>
-        <!-- Carousel -->
-        <div id="reviewCarousel" class="flex overflow-x-auto snap-x snap-mandatory gap-5 pb-6 scrollbar-hide scroll-smooth">
-        <!-- Review 1 -->
-        <div class="bg-neutral-light rounded-2xl p-6 lg:p-8 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
-          <div class="flex text-accent mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="text-neutral-dark mb-4">&ldquo;Chris is simply the best. He has solved several issues including rodents and ants quickly and easily, first time around. Prices are very good and there is no pressure or upselling.&rdquo;</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">DM</div>
-            <div>
-              <p class="font-semibold text-neutral-dark text-sm">David Monheit</p>
-              <p class="text-xs text-neutral-mid">Google Review</p>
-            </div>
-          </div>
-        </div>
-        <!-- Review 2 -->
-        <div class="bg-neutral-light rounded-2xl p-6 lg:p-8 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
-          <div class="flex text-accent mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="text-neutral-dark mb-4">&ldquo;Chris from Barron Pest Control is very well educated. He was so able to explain everything in detail to me. Chris is a true professional and a pleasure to deal with.&rdquo;</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">BK</div>
-            <div>
-              <p class="font-semibold text-neutral-dark text-sm">Barbara Knecht</p>
-              <p class="text-xs text-neutral-mid">Google Review</p>
-            </div>
-          </div>
-        </div>
-        <!-- Review 3 -->
-        <div class="bg-neutral-light rounded-2xl p-6 lg:p-8 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
-          <div class="flex text-accent mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="text-neutral-dark mb-4">&ldquo;Super knowledgeable and friendly company! Never pushy about their services and always cover every base possible for the best protection all around.&rdquo;</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">LO</div>
-            <div>
-              <p class="font-semibold text-neutral-dark text-sm">Lisa O&rsquo;Neill</p>
-              <p class="text-xs text-neutral-mid">Google Review</p>
-            </div>
-          </div>
-        </div>
-        <!-- Review 4 -->
-        <div class="bg-neutral-light rounded-2xl p-6 lg:p-8 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
-          <div class="flex text-accent mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="text-neutral-dark mb-4">&ldquo;Honest the best pest control service I&rsquo;ve come across since living on Long Island. Chris took care of a really bad ant issue we had. Prices are fair.&rdquo;</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">FP</div>
-            <div>
-              <p class="font-semibold text-neutral-dark text-sm">Fred Pena</p>
-              <p class="text-xs text-neutral-mid">Google Review</p>
-            </div>
-          </div>
-        </div>
-        <!-- Review 5 -->
-        <div class="bg-neutral-light rounded-2xl p-6 lg:p-8 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
-          <div class="flex text-accent mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="text-neutral-dark mb-4">&ldquo;One of the few companies that actually backs up their work. Had them handle a serious rodent problem and it was resolved quickly.&rdquo;</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">DM</div>
-            <div>
-              <p class="font-semibold text-neutral-dark text-sm">David Monheit</p>
-              <p class="text-xs text-neutral-mid">Google Review</p>
-            </div>
-          </div>
-        </div>
-        <!-- Review 6 -->
-        <div class="bg-neutral-light rounded-2xl p-6 lg:p-8 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
-          <div class="flex text-accent mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="text-neutral-dark mb-4">&ldquo;Wonderful company to deal with. Chris is extremely knowledgeable and takes the time to answer all of your questions. Highly recommend.&rdquo;</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">AT</div>
-            <div>
-              <p class="font-semibold text-neutral-dark text-sm">Adrian Thompson</p>
-              <p class="text-xs text-neutral-mid">Google Review</p>
-            </div>
-          </div>
-        </div>
-        <!-- Review 7 -->
-        <div class="bg-neutral-light rounded-2xl p-6 lg:p-8 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
-          <div class="flex text-accent mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="text-neutral-dark mb-4">&ldquo;We&rsquo;ve been using Barron for years. They are reliable, professional, and always on time. Best pest control on Long Island.&rdquo;</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">JR</div>
-            <div>
-              <p class="font-semibold text-neutral-dark text-sm">Jessica Ruiz</p>
-              <p class="text-xs text-neutral-mid">Google Review</p>
-            </div>
-          </div>
-        </div>
-        <!-- Review 8 -->
-        <div class="bg-neutral-light rounded-2xl p-6 lg:p-8 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
-          <div class="flex text-accent mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="text-neutral-dark mb-4">&ldquo;Chris identified our termite problem before it got worse. Thorough inspection and treatment. Very fair pricing.&rdquo;</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">RC</div>
-            <div>
-              <p class="font-semibold text-neutral-dark text-sm">Robert Chen</p>
-              <p class="text-xs text-neutral-mid">Google Review</p>
-            </div>
-          </div>
-        </div>
-        <!-- Review 9 -->
-        <div class="bg-neutral-light rounded-2xl p-6 lg:p-8 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
-          <div class="flex text-accent mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="text-neutral-dark mb-4">&ldquo;Called about a wasp nest and they came out the same day. Quick, professional, and the price was very reasonable.&rdquo;</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">MS</div>
-            <div>
-              <p class="font-semibold text-neutral-dark text-sm">Maria Santos</p>
-              <p class="text-xs text-neutral-mid">Google Review</p>
-            </div>
-          </div>
-        </div>
-        <!-- Review 10 -->
-        <div class="bg-neutral-light rounded-2xl p-6 lg:p-8 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
-          <div class="flex text-accent mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="text-neutral-dark mb-4">&ldquo;Been with Barron for 3 years now. Quarterly service keeps our home pest-free year-round. Highly recommend their IPM approach.&rdquo;</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">TM</div>
-            <div>
-              <p class="font-semibold text-neutral-dark text-sm">Tom Murphy</p>
-              <p class="text-xs text-neutral-mid">Google Review</p>
-            </div>
-          </div>
-        </div>
-        <!-- Review 11 -->
-        <div class="bg-neutral-light rounded-2xl p-6 lg:p-8 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
-          <div class="flex text-accent mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="text-neutral-dark mb-4">&ldquo;The team at Barron is outstanding. They took care of our bed bug situation discreetly and effectively. Can&rsquo;t thank them enough.&rdquo;</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">PW</div>
-            <div>
-              <p class="font-semibold text-neutral-dark text-sm">Patricia Williams</p>
-              <p class="text-xs text-neutral-mid">Google Review</p>
-            </div>
-          </div>
-        </div>
-        <!-- Review 12 -->
-        <div class="bg-neutral-light rounded-2xl p-6 lg:p-8 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
-          <div class="flex text-accent mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="text-neutral-dark mb-4">&ldquo;Best pest control company on Long Island, hands down. Professional, knowledgeable, and reasonably priced.&rdquo;</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">MJ</div>
-            <div>
-              <p class="font-semibold text-neutral-dark text-sm">Mike Johnson</p>
-              <p class="text-xs text-neutral-mid">Google Review</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Scroll indicators + arrows -->
-      <div class="flex items-center justify-center gap-4 mt-6">
-        <button onclick="document.getElementById('reviewCarousel').scrollBy({left:-400,behavior:'smooth'})" class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-neutral-light transition-colors" aria-label="Previous reviews">
+
+      <!-- Carousel with side arrows -->
+      <div class="relative flex items-center">
+        <!-- Left arrow -->
+        <button onclick="document.getElementById('reviewCarousel').scrollBy({left:-420,behavior:'smooth'})" class="hidden lg:flex absolute -left-5 z-20 w-10 h-10 rounded-full bg-white border border-gray-200 shadow-md items-center justify-center hover:bg-neutral-light transition-colors" aria-label="Previous reviews">
           <svg class="w-5 h-5 text-neutral-mid" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
         </button>
-        <span class="text-sm text-neutral-mid">Scroll for more reviews</span>
-        <button onclick="document.getElementById('reviewCarousel').scrollBy({left:400,behavior:'smooth'})" class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center hover:bg-neutral-light transition-colors" aria-label="Next reviews">
+
+        <!-- Cards -->
+        <div id="reviewCarousel" class="flex overflow-x-auto snap-x snap-mandatory gap-5 scrollbar-hide scroll-smooth w-full">
+          <!-- GOOGLE REVIEWS -->
+          <div class="review-card review-google bg-neutral-light rounded-2xl p-6 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">DM</div>
+                <div><p class="font-semibold text-neutral-dark text-sm">David Monheit</p></div>
+              </div>
+              <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <div class="flex text-accent mb-2 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="text-neutral-dark text-sm leading-relaxed">Chris is simply the best. He has solved several issues including rodents and ants quickly and easily, first time around. Prices are very good and there is no pressure or upselling.</p>
+          </div>
+          <div class="review-card review-google bg-neutral-light rounded-2xl p-6 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">BK</div>
+                <div><p class="font-semibold text-neutral-dark text-sm">Barbara Knecht</p></div>
+              </div>
+              <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <div class="flex text-accent mb-2 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="text-neutral-dark text-sm leading-relaxed">Chris from Barron Pest Control is very well educated. He was so able to explain everything in detail to me. Chris is a true professional and a pleasure to deal with.</p>
+          </div>
+          <div class="review-card review-google bg-neutral-light rounded-2xl p-6 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">LO</div>
+                <div><p class="font-semibold text-neutral-dark text-sm">Lisa O&rsquo;Neill</p></div>
+              </div>
+              <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <div class="flex text-accent mb-2 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="text-neutral-dark text-sm leading-relaxed">Super knowledgeable and friendly company! Never pushy about their services and always cover every base possible for the best protection all around.</p>
+          </div>
+          <div class="review-card review-google bg-neutral-light rounded-2xl p-6 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">FP</div>
+                <div><p class="font-semibold text-neutral-dark text-sm">Fred Pena</p></div>
+              </div>
+              <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <div class="flex text-accent mb-2 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="text-neutral-dark text-sm leading-relaxed">Honest the best pest control service I&rsquo;ve come across since living on Long Island. Chris took care of a really bad ant issue we had. Prices are fair.</p>
+          </div>
+          <div class="review-card review-google bg-neutral-light rounded-2xl p-6 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">AT</div>
+                <div><p class="font-semibold text-neutral-dark text-sm">Adrian Thompson</p></div>
+              </div>
+              <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <div class="flex text-accent mb-2 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="text-neutral-dark text-sm leading-relaxed">Wonderful company to deal with. Chris is extremely knowledgeable and takes the time to answer all of your questions. Highly recommend.</p>
+          </div>
+          <div class="review-card review-google bg-neutral-light rounded-2xl p-6 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center text-secondary font-bold text-sm">JR</div>
+                <div><p class="font-semibold text-neutral-dark text-sm">Jessica Ruiz</p></div>
+              </div>
+              <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <div class="flex text-accent mb-2 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="text-neutral-dark text-sm leading-relaxed">We&rsquo;ve been using Barron for years. They are reliable, professional, and always on time. Best pest control on Long Island.</p>
+          </div>
+
+          <!-- YELP REVIEWS -->
+          <div class="review-card review-yelp hidden bg-neutral-light rounded-2xl p-6 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-[#FF1A1A]/10 rounded-full flex items-center justify-center text-[#FF1A1A] font-bold text-sm">KK</div>
+                <div><p class="font-semibold text-neutral-dark text-sm">Kathleen K.</p><p class="text-xs text-neutral-mid">Shirley, NY</p></div>
+              </div>
+              <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24" fill="#FF1A1A"><path d="M20.16 12.73l-4.27-.93c-.55-.12-.76.36-.47.82l2.28 3.65c.28.46.87.5 1.2.09l1.73-2.14c.33-.42.07-1.37-.47-1.49zm-5.89 3.04l-2.7 3.38c-.35.43-.05 1.06.49 1.03l2.89-.16c.53-.03.88-.52.72-1.01l-1.19-3.26c-.16-.43-.86-.43-1.21.02zM12.3 2.27c-.38-.48-1.15-.35-1.33.23L7.73 12.3c-.17.55.28.97.8.75l4.14-1.73c.52-.22.64-.88.23-1.25L12.3 2.27zm-1.72 13.08l-4.37-.52c-.55-.07-.85.46-.61.92l1.38 2.66c.24.47.82.62 1.2.31l2.58-2.12c.4-.32.36-1.18-.18-1.25zM7.47 10.3L3.9 8.64c-.5-.23-1.08.17-1.01.72l.43 3.46c.07.56.56.87 1.04.65l3.27-1.46c.46-.21.34-1.49-.16-1.71z"/></svg>
+            </div>
+            <div class="flex text-[#FF1A1A] mb-2 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="text-neutral-dark text-sm leading-relaxed">I highly recommend Barron Pest Control. Michael is top notch. He is friendly, knowledgeable, respectful of the property and very thorough. He diagnoses the problem and sees it through to resolution.</p>
+          </div>
+          <div class="review-card review-yelp hidden bg-neutral-light rounded-2xl p-6 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-[#FF1A1A]/10 rounded-full flex items-center justify-center text-[#FF1A1A] font-bold text-sm">KM</div>
+                <div><p class="font-semibold text-neutral-dark text-sm">Katie M.</p><p class="text-xs text-neutral-mid">Eastport, NY</p></div>
+              </div>
+              <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24" fill="#FF1A1A"><path d="M20.16 12.73l-4.27-.93c-.55-.12-.76.36-.47.82l2.28 3.65c.28.46.87.5 1.2.09l1.73-2.14c.33-.42.07-1.37-.47-1.49zm-5.89 3.04l-2.7 3.38c-.35.43-.05 1.06.49 1.03l2.89-.16c.53-.03.88-.52.72-1.01l-1.19-3.26c-.16-.43-.86-.43-1.21.02zM12.3 2.27c-.38-.48-1.15-.35-1.33.23L7.73 12.3c-.17.55.28.97.8.75l4.14-1.73c.52-.22.64-.88.23-1.25L12.3 2.27zm-1.72 13.08l-4.37-.52c-.55-.07-.85.46-.61.92l1.38 2.66c.24.47.82.62 1.2.31l2.58-2.12c.4-.32.36-1.18-.18-1.25zM7.47 10.3L3.9 8.64c-.5-.23-1.08.17-1.01.72l.43 3.46c.07.56.56.87 1.04.65l3.27-1.46c.46-.21.34-1.49-.16-1.71z"/></svg>
+            </div>
+            <div class="flex text-[#FF1A1A] mb-2 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="text-neutral-dark text-sm leading-relaxed">Highly recommend! Responds quickly, kind and is reasonably priced. I had a huge spider problem that literally webbed around my house last year, they sprayed once and haven&rsquo;t seen one since.</p>
+          </div>
+          <div class="review-card review-yelp hidden bg-neutral-light rounded-2xl p-6 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-[#FF1A1A]/10 rounded-full flex items-center justify-center text-[#FF1A1A] font-bold text-sm">HB</div>
+                <div><p class="font-semibold text-neutral-dark text-sm">Hayley B.</p><p class="text-xs text-neutral-mid">Port Jefferson, NY</p></div>
+              </div>
+              <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24" fill="#FF1A1A"><path d="M20.16 12.73l-4.27-.93c-.55-.12-.76.36-.47.82l2.28 3.65c.28.46.87.5 1.2.09l1.73-2.14c.33-.42.07-1.37-.47-1.49zm-5.89 3.04l-2.7 3.38c-.35.43-.05 1.06.49 1.03l2.89-.16c.53-.03.88-.52.72-1.01l-1.19-3.26c-.16-.43-.86-.43-1.21.02zM12.3 2.27c-.38-.48-1.15-.35-1.33.23L7.73 12.3c-.17.55.28.97.8.75l4.14-1.73c.52-.22.64-.88.23-1.25L12.3 2.27zm-1.72 13.08l-4.37-.52c-.55-.07-.85.46-.61.92l1.38 2.66c.24.47.82.62 1.2.31l2.58-2.12c.4-.32.36-1.18-.18-1.25zM7.47 10.3L3.9 8.64c-.5-.23-1.08.17-1.01.72l.43 3.46c.07.56.56.87 1.04.65l3.27-1.46c.46-.21.34-1.49-.16-1.71z"/></svg>
+            </div>
+            <div class="flex text-[#FF1A1A] mb-2 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="text-neutral-dark text-sm leading-relaxed">Great service! Mike showed same day answering all my concerns. He was extremely easy to contact and super thorough, explaining the process as he went. Highly recommend!</p>
+          </div>
+          <div class="review-card review-yelp hidden bg-neutral-light rounded-2xl p-6 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-[#FF1A1A]/10 rounded-full flex items-center justify-center text-[#FF1A1A] font-bold text-sm">DQ</div>
+                <div><p class="font-semibold text-neutral-dark text-sm">Dan Q.</p><p class="text-xs text-neutral-mid">Woodbury, NY</p></div>
+              </div>
+              <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24" fill="#FF1A1A"><path d="M20.16 12.73l-4.27-.93c-.55-.12-.76.36-.47.82l2.28 3.65c.28.46.87.5 1.2.09l1.73-2.14c.33-.42.07-1.37-.47-1.49zm-5.89 3.04l-2.7 3.38c-.35.43-.05 1.06.49 1.03l2.89-.16c.53-.03.88-.52.72-1.01l-1.19-3.26c-.16-.43-.86-.43-1.21.02zM12.3 2.27c-.38-.48-1.15-.35-1.33.23L7.73 12.3c-.17.55.28.97.8.75l4.14-1.73c.52-.22.64-.88.23-1.25L12.3 2.27zm-1.72 13.08l-4.37-.52c-.55-.07-.85.46-.61.92l1.38 2.66c.24.47.82.62 1.2.31l2.58-2.12c.4-.32.36-1.18-.18-1.25zM7.47 10.3L3.9 8.64c-.5-.23-1.08.17-1.01.72l.43 3.46c.07.56.56.87 1.04.65l3.27-1.46c.46-.21.34-1.49-.16-1.71z"/></svg>
+            </div>
+            <div class="flex text-[#FF1A1A] mb-2 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="text-neutral-dark text-sm leading-relaxed">Called Barron to help with a carpenter ant situation in the attic. They came right away and got the situation under control. Very nice people! Highly recommend Barron Pest Control.</p>
+          </div>
+          <div class="review-card review-yelp hidden bg-neutral-light rounded-2xl p-6 snap-start w-[85vw] sm:w-[70vw] md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.875rem)] flex-shrink-0">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-[#FF1A1A]/10 rounded-full flex items-center justify-center text-[#FF1A1A] font-bold text-sm">DO</div>
+                <div><p class="font-semibold text-neutral-dark text-sm">Dan O.</p><p class="text-xs text-neutral-mid">Mastic, NY</p></div>
+              </div>
+              <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24" fill="#FF1A1A"><path d="M20.16 12.73l-4.27-.93c-.55-.12-.76.36-.47.82l2.28 3.65c.28.46.87.5 1.2.09l1.73-2.14c.33-.42.07-1.37-.47-1.49zm-5.89 3.04l-2.7 3.38c-.35.43-.05 1.06.49 1.03l2.89-.16c.53-.03.88-.52.72-1.01l-1.19-3.26c-.16-.43-.86-.43-1.21.02zM12.3 2.27c-.38-.48-1.15-.35-1.33.23L7.73 12.3c-.17.55.28.97.8.75l4.14-1.73c.52-.22.64-.88.23-1.25L12.3 2.27zm-1.72 13.08l-4.37-.52c-.55-.07-.85.46-.61.92l1.38 2.66c.24.47.82.62 1.2.31l2.58-2.12c.4-.32.36-1.18-.18-1.25zM7.47 10.3L3.9 8.64c-.5-.23-1.08.17-1.01.72l.43 3.46c.07.56.56.87 1.04.65l3.27-1.46c.46-.21.34-1.49-.16-1.71z"/></svg>
+            </div>
+            <div class="flex text-[#FF1A1A] mb-2 text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="text-neutral-dark text-sm leading-relaxed">He met me at 7pm on a Saturday Night, did an overall general Pest Inspection, did not try to bang me for services I did not need. He did what he said he would do which is greatly appreciated.</p>
+          </div>
+        </div>
+
+        <!-- Right arrow -->
+        <button onclick="document.getElementById('reviewCarousel').scrollBy({left:420,behavior:'smooth'})" class="hidden lg:flex absolute -right-5 z-20 w-10 h-10 rounded-full bg-white border border-gray-200 shadow-md items-center justify-center hover:bg-neutral-light transition-colors" aria-label="Next reviews">
           <svg class="w-5 h-5 text-neutral-mid" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
         </button>
       </div>
-      </div>
+
       <div class="text-center mt-8">
-        <a href="https://www.google.com/search?hl=en-GB&gl=uk&q=Barron+Pest+Control&ludocid=12656657129545949978&lsig=AB86z5UCafyPMV9-1EQWuzO50Ycw#lrd=0x89e85a63ececb0db:0xafa57a99fa80631a,1,,,," target="_blank" rel="noopener" class="btn-outline">
+        <a id="review-link-google" href="https://www.google.com/search?hl=en-GB&gl=uk&q=Barron+Pest+Control&ludocid=12656657129545949978&lsig=AB86z5UCafyPMV9-1EQWuzO50Ycw#lrd=0x89e85a63ececb0db:0xafa57a99fa80631a,1,,,," target="_blank" rel="noopener" class="btn-outline">
           See All Reviews on Google
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+        <a id="review-link-yelp" href="https://www.yelp.com/biz/barron-pest-control-mastic" target="_blank" rel="noopener" class="btn-outline hidden">
+          See All Reviews on Yelp
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
         </a>
       </div>
@@ -1152,5 +1160,43 @@
 
   <!-- ========== JAVASCRIPT ========== -->
   <script src="js/main.js"></script>
+  <script>
+  function showReviewTab(tab) {
+    const carousel = document.getElementById('reviewCarousel');
+    const googleCards = document.querySelectorAll('.review-google');
+    const yelpCards = document.querySelectorAll('.review-yelp');
+    const tabGoogle = document.getElementById('tab-google');
+    const tabYelp = document.getElementById('tab-yelp');
+    const ratingGoogle = document.getElementById('rating-google');
+    const ratingYelp = document.getElementById('rating-yelp');
+    const linkGoogle = document.getElementById('review-link-google');
+    const linkYelp = document.getElementById('review-link-yelp');
+
+    if (tab === 'google') {
+      googleCards.forEach(c => c.classList.remove('hidden'));
+      yelpCards.forEach(c => c.classList.add('hidden'));
+      tabGoogle.classList.add('border-neutral-dark', 'text-neutral-dark');
+      tabGoogle.classList.remove('border-transparent', 'text-neutral-mid');
+      tabYelp.classList.remove('border-neutral-dark', 'text-neutral-dark');
+      tabYelp.classList.add('border-transparent', 'text-neutral-mid');
+      ratingGoogle.classList.remove('hidden');
+      ratingYelp.classList.add('hidden');
+      linkGoogle.classList.remove('hidden');
+      linkYelp.classList.add('hidden');
+    } else {
+      yelpCards.forEach(c => c.classList.remove('hidden'));
+      googleCards.forEach(c => c.classList.add('hidden'));
+      tabYelp.classList.add('border-neutral-dark', 'text-neutral-dark');
+      tabYelp.classList.remove('border-transparent', 'text-neutral-mid');
+      tabGoogle.classList.remove('border-neutral-dark', 'text-neutral-dark');
+      tabGoogle.classList.add('border-transparent', 'text-neutral-mid');
+      ratingYelp.classList.remove('hidden');
+      ratingGoogle.classList.add('hidden');
+      linkYelp.classList.remove('hidden');
+      linkGoogle.classList.add('hidden');
+    }
+    carousel.scrollTo({left: 0, behavior: 'smooth'});
+  }
+  </script>
 </body>
 </html>
