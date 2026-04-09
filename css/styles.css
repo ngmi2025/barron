@@ -240,19 +240,23 @@ body {
   transform: translateX(0);
 }
 
-/* ===== SMS Widget ===== */
-.sms-widget, .whatsapp-widget {
-  animation: pulse-brand 2s infinite;
+/* ===== WhatsApp Widget ===== */
+.whatsapp-widget {
+  animation: pulse-green 2s infinite;
 }
 
-@keyframes pulse-brand {
+@keyframes pulse-green {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(188, 4, 44, 0.5);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
   }
   50% {
-    box-shadow: 0 0 0 12px rgba(188, 4, 44, 0);
+    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
   }
 }
+
+/* ===== Scrollbar Hide (for carousels) ===== */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
 
 /* ===== Sticky Mobile CTA ===== */
 .mobile-cta-bar {
